@@ -1,0 +1,45 @@
+.home {
+    display: grid;
+    gap: 20px;
+    padding: 0 10px;
+    color: black;
+}
+
+.home__item>h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.home__item {
+    background: white;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.home__statistics {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.home__deadlines {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.home__recent {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.home__to-do {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}

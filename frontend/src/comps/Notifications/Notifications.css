@@ -1,0 +1,22 @@
+.notifications{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    border-radius: 10px;
+    background: antiquewhite;
+    top:11%;
+    right: 5%;
+    width: 20%;
+}
+.notifications__item{
+    padding: 0 10px;
+}
+hr {
+    margin: 1px 0;
+    padding: 0;
+    height: 10px;
+    border: none;
+    border-top: 1px solid #333;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}

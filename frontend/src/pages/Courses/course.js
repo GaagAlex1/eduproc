@@ -1,0 +1,1 @@
+export const courses = [{ courseName:'cocu_xui' , courseImage: '/image.png'},{ courseImage: '/image.png'}]

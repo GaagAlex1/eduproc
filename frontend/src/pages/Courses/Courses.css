@@ -1,0 +1,10 @@
+.courses{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 34px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+}

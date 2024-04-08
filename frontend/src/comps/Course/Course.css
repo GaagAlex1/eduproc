@@ -1,0 +1,7 @@
+.course{
+    flex-basis: 20%;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}

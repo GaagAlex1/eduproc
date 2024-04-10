@@ -1,0 +1,41 @@
+.state_switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.state_switcher_button {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none; /* отмена зачеркивания текста */
+}
+
+.state_switcher_button::before {
+    content: "";
+    position: absolute;
+    top: calc(100% - 2px); /* немного ниже */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #666; /* цвет выдвижения */
+    transform: scaleY(0);
+    transition: transform 0.3s;
+}
+
+.state_switcher_button.active::before {
+    transform: scaleY(1);
+}
+
+.state_switcher_button:hover::before {
+    transform: scaleY(1);
+}
+
+hr {
+    margin: 0 10px;
+}

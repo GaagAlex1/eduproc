@@ -2,36 +2,45 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.1); /* Расположение по вертикали по центру */
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Расположение по вертикали и горизонтали по центру */
 }
 
 .welcome__lay {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     background: white;
     border-radius: 10px;
+    padding: 20px; /* Добавим немного отступа вокруг содержимого */
 }
-.welcome__eduproc{
-    margin: 0.5em 1em;
+
+.welcome__eduproc {
+    margin: 0.5em 0; /* Уменьшим отступы сверху и снизу */
     font-size: 3em;
 }
-.welcome__welcome-text{
+
+.welcome__welcome-text {
     font-size: 2.5em;
-    margin:  0.5em 1em 3em 1em;
+    margin: 0.5em 0 1.5em 0; /* Уменьшим отступ снизу */
 }
-.welcome__links{
+
+.welcome__links {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    gap: 50px;
+    gap: 20px; /* Уменьшим расстояние между ссылками */
 }
-.welcome__links_link{
+
+.welcome__links_link {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 10px 30px;
     cursor: pointer;
     font-size: 1.2em;
+    text-decoration: none; /* Уберем стандартное подчеркивание ссылок */
+    color: black; /* Установим черный цвет текста */
+}
+
+.welcome__links_link:hover {
+    background-color: #bdbdbd;
 }
